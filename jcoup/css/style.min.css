@@ -1,5 +1,55 @@
-@font-face{font-family:"Norwester";src:url('/jcoup/fonts/norwester.otf')}body{background:url('/jcoup/images/young_kids-colorful-straightened.jpg');background-size:cover;background-position:center;background-repeat:no-repeat;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;font:1em/1.2em Courier,monospace;color:#000;font-size:15px;margin:0;min-height:100vh;padding:3em 0 3em 3em}
+@font - face {
+    font - family: "Norwester";
+    src: url('/jcoup/fonts/norwester.otf')
+}
+body {
+    background: url('/jcoup/images/young_kids-colorful-straightened.jpg');background - size: cover;background - position: center;background - repeat: no - repeat; - moz - box - sizing: border - box; - webkit - box - sizing: border - box;box - sizing: border - box;font: 1 em / 1.2 em Courier,
+    monospace;color: #000;font-size:15px;margin:0;min-height:100vh;padding:3em 0 3em 3em}
 header,main{display:inline-block;position:relative}header{margin:0 3em 2em 1.5em;vertical-align:top}header p{margin:0}h1{font:7.3em/.9em "Norwester",sans-serif;margin:0}h2{font:1.64em/1em "Raleway";margin:0;padding-left:.1em;text-transform:uppercase}
-a,a:link{color:#46b;text-decoration:none}a:hover,a:focus,a:active{color:#238;text-decoration:underline}span.little{font-size:.8em}address{font-style:normal}dl,ul,ol{display:inline-block;margin:0 1.5em 1em}dt{text-transform:uppercase}dd{margin:0}.subline{font:1.22em/1.22em "Raleway";color:#fff;margin:3em;position:absolute;letter-spacing:.03em;-webkit-transition:color 1s;transition:color 1s}
-.subline.left{bottom:0;left:0}.subline.right{top:32vmin;right:0}.kern-less{letter-spacing:-.03em}.kern-lesser{letter-spacing:-.09em}.kern-greater{letter-spacing:.09em}.background{position:fixed;top:-50vh;left:0;width:100vw;height:200vh;background:#fff;opacity:0;-webkit-transition:opacity 1s;transition:opacity 1s}
-@media(max-width:1280px){body{font-size:1.15vw}}@media(max-width:959px){.background{opacity:.2}body{font-size:2vw}.subline{display:none}}@media(max-width:767px){body{font-size:3.75vw}article{margin-bottom:1em}h1{font-size:3em}h2{font-size:1.25em}}
+a,a:link{color:# 46 b;text - decoration: none
+}
+a: hover, a: focus, a: active {
+        color: #238;text-decoration:underline}span.little{font-size:.8em}address{font-style:normal}dl,ul,ol{display:inline-block;margin:0 1.5em 1em}dt{text-transform:uppercase}dd{margin:0}.subline{font:1.22em/1.22em "Raleway";color:# fff;margin: 3 em;position: absolute;letter - spacing: .03 em; - webkit - transition: color 1 s;transition: color 1 s
+    }
+    .subline.left {
+        bottom: 0;left: 0
+    }.subline.right {
+        top: 32 vmin;right: 0
+    }.kern - less {
+        letter - spacing: -.03 em
+    }.kern - lesser {
+        letter - spacing: -.09 em
+    }.kern - greater {
+        letter - spacing: .09 em
+    }.background {
+        position: fixed;top: -50 vh;left: 0;width: 100 vw;height: 200 vh;background: #fff;opacity: 0; - webkit - transition: opacity 1 s;transition: opacity 1 s
+    }
+@media(max - width: 1280 px) {
+    body {
+        font - size: 1.15 vw
+    }
+}
+@media(max - width: 959 px) {
+    .background {
+        opacity: .2
+    }
+    body {
+        font - size: 2 vw
+    }.subline {
+        display: none
+    }
+}
+@media(max - width: 767 px) {
+    body {
+        font - size: 3.75 vw
+    }
+    article {
+        margin - bottom: 1 em
+    }
+    h1 {
+        font - size: 3 em
+    }
+    h2 {
+        font - size: 1.25 em
+    }
+}
