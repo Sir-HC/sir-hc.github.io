@@ -55,7 +55,7 @@ address {
 }
 dl, ul, ol {
 	display:inline-block;
-	margin:0 1.5em 1em;
+	margin:0 1.5em 0;
 }
 dt {
 	text-transform:uppercase;
@@ -67,6 +67,7 @@ dd {
 	backdrop-filter: blur(5px);
 	background: rgba(255, 255, 255, 0.2);
 	border-radius: 12px; 
+	padding: 1em;
 }
 .subline {
 	font:1.22em/1.22em "Raleway";
