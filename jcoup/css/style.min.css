@@ -118,6 +118,9 @@ dd {
 	}
 }
 @media(max-width:767px) {
+	.wide-only {
+		display:none;
+	}
 	body {
 		font-size:3.75vw;
 	}
