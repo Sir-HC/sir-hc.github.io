@@ -7,7 +7,7 @@
   <style>
   
 	.top-bar {
-	  position: sticky;
+	  position: fixed;
 	  top: 0;
       display: flex;
 	  width: 100%;
@@ -22,7 +22,6 @@
 	  flex: 0 0 auto;
 	}
     body {
-	  position: absolute;
       font-family: sans-serif;
       text-align: center;
 	  width: 90%;
@@ -58,6 +57,7 @@
 	
 	@media (max-width: 600px) {
 	  button {
+	  font-size: 1.5rem;
 		flex: 1 1 100%;  
 		padding: 10px;
 	  }
