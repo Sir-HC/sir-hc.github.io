@@ -88,10 +88,12 @@
 <body>
   <div class="top-bar">
 	<div class="left-select">
-		<select id="groupSelector" onchange="switchGroup(this.value)">
-		  <option value="civo">Civolution</option>
-		  <option value="cent">Century Spice</option>
-		</select>
+		<form autocomplete="off">
+			<select id="groupSelector" onchange="switchGroup(this.value)">
+			  <option value="civo" selected>Civolution</option>
+			  <option value="cent">Century Spice</option>
+			</select>
+		</form>
 	</div>
 	<div class="buttons-center">
 		<div id="civo" class="button-group active">
@@ -104,8 +106,9 @@
 		</div>
 
 		<div id="cent" class="button-group">
-		  <button onclick="changeImage('images/cent_card.jpg')">Cards</button>
-		  <button onclick="changeImage('images/cent_goal.jpg')">Goals</button>
+		  <button onclick="changeImage('images/cent_card.png')">Cards</button>
+		  <button onclick="changeImage('images/cent_promo.jpg')">Promo Cards</button>
+		  <button onclick="changeImage('images/cent_goal.png')">Goals</button>
 		</div>
 		</div>
   </div>
