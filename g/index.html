@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cosmo's Intelegame</title>
+  <style>
+	.top-bar {
+	  position: sticky;
+	  top: 0;
+      display: flex;
+      flex-wrap: wrap;
+	  align-items: center;
+      justify-content: space-between;
+	  width: 100%;
+	  background: white;
+	  padding: 10px;
+	  z-index: 1000;
+	}
+	.left-select {
+	  flex: 0 0 auto;
+	
+	}
+    body {
+      font-family: sans-serif;
+      text-align: center;
+    }
+	.buttons-center {
+	  flex: 1; 
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+	}
+	 .button-group {
+      display: none; /* hidden by default */
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .button-group.active {
+      display: flex; /* show active group */
+    }
+    button {
+      margin: 5px;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      background-color: #f0f0f0;
+    }
+	select {
+      padding: 10px 15px;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+	}
+    button:hover {
+      background-color: #ddd;
+    }
+    img {
+      margin-top: 20px;
+      #max-width: 500px;
+      height: auto;
+      border: 2px solid #ccc;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SDX6MHHWKJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SDX6MHHWKJ');
+  </script>
+</head>
+<body>
+  <div class="top-bar">
+	<div class="left-select">
+		<select id="groupSelector" onchange="switchGroup(this.value)">
+		  <option value="civo">Civolution</option>
+		  <option value="cent">Century Spice</option>
+		</select>
+	</div>
+	<div class="buttons-center">
+		<div id="civo" class="button-group active">
+		  <button onclick="changeImage('images/civ_inv.jpg')">Inventions</button>
+		  <button onclick="changeImage('images/civ_mut.jpg')">Mutations</button>
+		  <button onclick="changeImage('images/civ_ins.jpg')">Insight</button>
+		  <button onclick="changeImage('images/civ_bld.jpg')">Buildings</button>
+		  <button onclick="changeImage('images/civ_ach.jpg')">Achivements</button>
+		  <button onclick="changeImage('images/civ_wea.jpg')">Weather</button>
+		</div>
+
+		<div id="cent" class="button-group">
+		  <button onclick="changeImage('images/cent_card.jpg')">Cards</button>
+		  <button onclick="changeImage('images/cent_goal.jpg')">Goals</button>
+		</div>
+		</div>
+  </div>
+  <div>
+    <img id="displayedImage" src="images/civ_inv.jpg" alt="Selected Image">
+  </div>
+
+  <script>
+    function switchGroup(groupId) {
+      document.querySelectorAll('.button-group').forEach(g => g.classList.remove('active'));
+      document.getElementById(groupId).classList.add('active');
+    }
+    function changeImage(imagePath) {
+      document.getElementById("displayedImage").src = imagePath;
+    }
+	
+  </script>
+</body>
+</html>
